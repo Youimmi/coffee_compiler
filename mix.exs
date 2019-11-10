@@ -23,13 +23,15 @@ defmodule CoffeeCompiler.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: {CoffeeCompiler.Application, []},
       extra_applications: [:logger]
     ]
   end
 
   defp package do
     [
-      files: ["lib", "LICENSE", "mix.exs", "README.md"],
+      exclude_patterns: [".DS_Store"],
+      files: ["lib", "LICENSE", "mix.exs", "priv", "README.md"],
       maintainers: [],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/Youimmi/coffee_compiler"}

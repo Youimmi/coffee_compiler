@@ -1,4 +1,4 @@
-defmodule Coffee.Application do
+defmodule CoffeeCompiler.Application do
   use Application
 
   def start(_type, _args) do
@@ -6,6 +6,6 @@ defmodule Coffee.Application do
       Coffee.Context
     ]
 
-    Supervisor.start_link(children, trategy: :one_for_one)
+    Supervisor.start_link(children, strategy: :one_for_one)
   end
 end
