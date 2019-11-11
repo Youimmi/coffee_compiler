@@ -24,6 +24,8 @@
 *.log
 
 *.plt
+*.plt.hash
 .*
-!.gitignore
 !.formatter.exs
+!.gitignore
+!.keep

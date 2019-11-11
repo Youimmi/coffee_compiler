@@ -16,6 +16,9 @@ defmodule CoffeeCompiler.MixProject do
       description: @description,
       package: package(),
       deps: deps(),
+      dialyzer: [
+        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
+      ],
       source_url: "https://github.com/Youimmi/coffee_compiler"
     ]
   end
@@ -31,7 +34,7 @@ defmodule CoffeeCompiler.MixProject do
   defp package do
     [
       exclude_patterns: [".DS_Store"],
-      files: ["lib", "LICENSE", "mix.exs", "priv", "README.md"],
+      files: ["lib", "LICENSE", "mix.exs", "priv/coffeescript.js", "README.md"],
       maintainers: [],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/Youimmi/coffee_compiler"}
@@ -41,6 +44,7 @@ defmodule CoffeeCompiler.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:dialyxir, "~> 1.0.0-rc.7", only: :dev, runtime: false},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:execjs, "~> 2.0"}
     ]

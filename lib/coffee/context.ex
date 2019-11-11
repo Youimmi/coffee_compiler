@@ -5,8 +5,7 @@ defmodule Coffee.Context do
 
   use Agent
 
-  def start_link(args) do
-    IO.puts(args)
+  def start_link(_args) do
     {:ok, source} = File.read(:filename.join(:code.priv_dir(:coffee_compiler), "coffeescript.js"))
     context = Execjs.compile(source)
 
