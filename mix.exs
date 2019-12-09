@@ -1,7 +1,7 @@
 defmodule CoffeeCompiler.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   @description """
   CoffeeScript core compiler for Elixir
@@ -33,7 +33,6 @@ defmodule CoffeeCompiler.MixProject do
 
   defp package do
     [
-      exclude_patterns: [".DS_Store"],
       files: ["lib", "LICENSE", "mix.exs", "priv/coffeescript.js", "README.md"],
       maintainers: [],
       licenses: ["MIT"],
@@ -44,6 +43,7 @@ defmodule CoffeeCompiler.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:credo, "~> 1.1.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0.0-rc.7", only: :dev, runtime: false},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:execjs, "~> 2.0"}

@@ -23,8 +23,14 @@
 # If NPM crashes, it generates a log, let's ignore it too.
 *.log
 
+# Ignore package tarball (built via "mix hex.build").
+coffee_compiler-*
+
+# Ignore Dialyze files
 *.plt
 *.plt.hash
+
+# Ignore hidden files
 .*
 !.formatter.exs
 !.gitignore
