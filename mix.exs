@@ -16,9 +16,6 @@ defmodule CoffeeCompiler.MixProject do
       description: @description,
       package: package(),
       deps: deps(),
-      dialyzer: [
-        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
-      ],
       source_url: "https://github.com/Youimmi/coffee_compiler"
     ]
   end
