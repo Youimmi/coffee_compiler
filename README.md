@@ -8,7 +8,7 @@ Add `coffee_compiler` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:coffee_compiler, "~> 0.1.0"}
+    {:coffee_compiler, "~> 0.1"}
   ]
 end
 ```
