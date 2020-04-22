@@ -3,8 +3,14 @@ defmodule Coffee.Compiler do
   Compile coffee source to js
   """
 
-  def compile(coffee, opts) do
-    context = Agent.get(Coffee.Context, & &1)
-    Execjs.call(context, "CoffeeScript.compile", [coffee, opts])
+  def compile(_offee, _opts \\ []) do
+    {js, _} =
+      System.cmd("yarn", ["rollup", "-c", "rollup.config.js"],
+        cd: Path.join(:code.priv_dir(:coffee_compiler), ".")
+      )
+
+    IO.inspect(js)
+
+    {:ok, js}
   end
 end

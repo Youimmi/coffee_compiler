@@ -1,6 +1,6 @@
 defmodule Coffee do
   @moduledoc """
-  Compiles Coffee into JS using a CoffeeScript core compiler
+  Compiles Coffee into JS using Rollup
   """
 
   def compile(source, opts \\ []) do

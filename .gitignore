@@ -26,8 +26,20 @@
 # Ignore package tarball (built via "mix hex.build").
 coffee_compiler-*
 
+# Ignore Dialyze files
+*.plt
+*.plt.hash
+
 # Ignore hidden files
 .*
 !.formatter.exs
 !.gitignore
 !.keep
+
+# Keep Yarn 2 files
+node_modules
+!/priv/.pnp.js
+!/priv/.yarn/build-state.yml
+!/priv/.yarn/install-state.gz
+!/priv/.yarn/releases
+!/priv/.yarnrc.yml
