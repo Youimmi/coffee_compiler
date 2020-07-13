@@ -36,10 +36,13 @@ coffee_compiler-*
 !.gitignore
 !.keep
 
-# Keep Yarn 2 files
-node_modules
-!/priv/.pnp.js
-!/priv/.yarn/build-state.yml
-!/priv/.yarn/install-state.gz
-!/priv/.yarn/releases
-!/priv/.yarnrc.yml
+# # Ignore yarn artifacts
+!.pnp.js
+!.yarnrc.yml
+
+.yarn/*
+!.yarn/cache
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

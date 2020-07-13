@@ -3,13 +3,20 @@ defmodule Coffee.Compiler do
   Compile coffee source to js
   """
 
-  def compile(_offee, _opts \\ []) do
+  def compile(coffee, _opts) do
     {js, _} =
-      System.cmd("yarn", ["rollup", "-c", "rollup.config.js"],
-        cd: Path.join(:code.priv_dir(:coffee_compiler), ".")
+      System.cmd(
+        "yarn",
+        [
+          "workspace",
+          "coffee_compiler",
+          "rollup",
+          coffee,
+          "-c",
+          Application.app_dir(:coffee_compiler, "priv/rollup.config.js")
+        ],
+        cd: "assets"
       )
-
-    IO.inspect(js)
 
     {:ok, js}
   end

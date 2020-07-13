@@ -1,0 +1,12 @@
+{
+  "name": "coffee_compiler",
+  "version": "0.0.1",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "coffeescript": "^2.5.1",
+    "rollup": "^2.21.0",
+    "rollup-plugin-coffee-script": "^2.0.0",
+    "rollup-plugin-terser": "^6.1.0"
+  }
+}
