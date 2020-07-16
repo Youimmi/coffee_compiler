@@ -3,14 +3,16 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
 
+const extensions = { extensions: ['.js', '.coffee'] }
+
 export default {
   output: {
     format: 'es'
   },
   plugins: [
     coffee({ bare: true }),
-    resolve(),
-    commonjs(),
+    resolve(extensions),
+    commonjs(extensions),
     terser()
   ]
 }
