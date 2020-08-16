@@ -32,41 +32,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-commonjs@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@rollup/plugin-commonjs@npm:14.0.0"
+"@rollup/plugin-commonjs@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "@rollup/plugin-commonjs@npm:15.0.0"
   dependencies:
-    "@rollup/pluginutils": ^3.0.8
+    "@rollup/pluginutils": ^3.1.0
     commondir: ^1.0.1
-    estree-walker: ^1.0.1
-    glob: ^7.1.2
-    is-reference: ^1.1.2
-    magic-string: ^0.25.2
-    resolve: ^1.11.0
+    estree-walker: ^2.0.1
+    glob: ^7.1.6
+    is-reference: ^1.2.1
+    magic-string: ^0.25.7
+    resolve: ^1.17.0
   peerDependencies:
-    rollup: ^2.3.4
-  checksum: f8c733dee53be98576bd9c739a876635407792944abcc1eba2cd9444ce673092582b863be9a1d29c2dde56a654761b1df1ba5301686e94359bca114d1c05c893
+    rollup: ^2.22.0
+  checksum: c48493cabb1ab71a24bf0561f48a6d98843c7a07fef312e73a6c08ad3b19301b4d4a45bd0b6fb0acc856b19695f898b0d0be6cdb157439397d05aeb572d7dbdd
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^8.4.0":
-  version: 8.4.0
-  resolution: "@rollup/plugin-node-resolve@npm:8.4.0"
+"@rollup/plugin-node-resolve@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@rollup/plugin-node-resolve@npm:9.0.0"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     "@types/resolve": 1.17.1
     builtin-modules: ^3.1.0
-    deep-freeze: ^0.0.1
     deepmerge: ^4.2.2
     is-module: ^1.0.0
     resolve: ^1.17.0
   peerDependencies:
     rollup: ^1.20.0||^2.0.0
-  checksum: 1c3da8d000f9958d9dd4d52035cca43a985266cb8af42ac1e678179ffd755818a4b18fd23e51b8d7daf49cfac7fd04ca361c11e7db7791b95f2a4010c419a401
+  checksum: 34576bbd9cfb096ed6fcce256e9210995144ccfd352ef09134507a7c6b479cee20da2896525ebf8bf139d9a31e8eec4b6787ed9de3209ee6610a949dc9f7c268
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^3.0.8, @rollup/pluginutils@npm:^3.1.0":
+"@rollup/pluginutils@npm:^3.1.0":
   version: 3.1.0
   resolution: "@rollup/pluginutils@npm:3.1.0"
   dependencies:
@@ -79,7 +78,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:*":
+"@rollup/pluginutils@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@rollup/pluginutils@npm:4.0.0"
+  dependencies:
+    "@types/estree": 0.0.45
+    estree-walker: ^2.0.1
+    picomatch: ^2.2.2
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0
+  checksum: e1731766bd9af63289bf64c3580f6469b67ee02c02ac0f5a47e893dfd2fb1b452b89620a4b75554ab27b51e3e65d28f9e94c3ecc4219663b675d1ffbbfdb0651
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*, @types/estree@npm:0.0.45":
   version: 0.0.45
   resolution: "@types/estree@npm:0.0.45"
   checksum: 9d339cbcf29a96a32e9d40efc21009c2342e93c4f653294dd1ef081ae474bca9e54707e5d4a1cff90b9e3566e8bdd71ac31e0c3d24bc2ff1d3d5aa75058b3937
@@ -117,14 +129,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^6.12.3":
-  version: 6.12.3
-  resolution: "ajv@npm:6.12.3"
+  version: 6.12.4
+  resolution: "ajv@npm:6.12.4"
   dependencies:
     fast-deep-equal: ^3.1.1
     fast-json-stable-stringify: ^2.0.0
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
-  checksum: b20a171bf30ede1635c6b1955bcc1db5a6b3e7dfa77f75aace9fb0db87375430c46d5cdd84158a0bf0a8da91e4da97bdb1afe5604a0969d8468b7c11143fdbba
+  checksum: 50d72b0a10326732072f5481b1b6bd5a43f8d770878b8f88ba5bb232abb745cefbf7f87a0e64679bd477d4a8bba0b3aea084675bd34943db5279c15907ee658f
   languageName: node
   linkType: hard
 
@@ -192,9 +204,9 @@ __metadata:
   linkType: hard
 
 "aws4@npm:^1.8.0":
-  version: 1.10.0
-  resolution: "aws4@npm:1.10.0"
-  checksum: f8c20a0031a2ae88bb29a89d5e5f8139eb0cc8aa964d0a8d69a476a4b0f6cf3954e3dd40bd08cea69c95ee31e2e69226d82e804628261a2375223ac67582009d
+  version: 1.10.1
+  resolution: "aws4@npm:1.10.1"
+  checksum: 53f2897324997542e3cfeca0b24f5960e2470eb8527f0b6587432a4607dcb8ca817955aef4297a3b429f1ca5fa688ba1b6bc57d744add41292ffcb59466392bb
   languageName: node
   linkType: hard
 
@@ -228,13 +240,6 @@ __metadata:
   version: 1.1.1
   resolution: "buffer-from@npm:1.1.1"
   checksum: 540ceb79c4f5bfcadaabbc18324fa84c50dc52905084be7c03596a339cf5a88513bee6831ce9b36ddd046fab09257a7c80686e129d0559a0cfd141da196ad956
-  languageName: node
-  linkType: hard
-
-"builtin-modules@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "builtin-modules@npm:2.0.0"
-  checksum: fc0c46577b7fcdde24b9710b56c55c3eb1255237e75a90185e25f878ac29b61f9aa9503a0a2c95dbc6979ebd5f3532ea0c07a595d8c6691e9d20423fd08c5076
   languageName: node
   linkType: hard
 
@@ -281,11 +286,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coffee_compiler@workspace:."
   dependencies:
-    "@rollup/plugin-commonjs": ^14.0.0
-    "@rollup/plugin-node-resolve": ^8.4.0
+    "@rollup/plugin-commonjs": ^15.0.0
+    "@rollup/plugin-node-resolve": ^9.0.0
     coffeescript: ^2.5.1
-    rollup: ^2.23.1
-    rollup-plugin-coffee-script: ^2.0.0
+    rollup: ^2.26.2
+    rollup-plugin-coffee-script: Youimmi/rollup-plugin-coffee-script
     rollup-plugin-terser: ^7.0.0
   languageName: unknown
   linkType: soft
@@ -369,13 +374,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deep-freeze@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "deep-freeze@npm:0.0.1"
-  checksum: c43ab54de95c60197f2a303aa60da76aa9f13f8a656d39f924daec63707712be1f75b9f5853bf2d5ec62fc72c840ba73ccefe32bdf3398472751de290b71a15c
-  languageName: node
-  linkType: hard
-
 "deepmerge@npm:^4.2.2":
   version: 4.2.2
   resolution: "deepmerge@npm:4.2.2"
@@ -421,17 +419,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"estree-walker@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "estree-walker@npm:0.6.1"
-  checksum: a63b94b841fcda2d79ff8e313b4ea8439b3364094ba66547289814bd7da4399a54cd33849b23504d239266430f219a142627071201a9fb6eb488bd025575f8fc
-  languageName: node
-  linkType: hard
-
 "estree-walker@npm:^1.0.1":
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1"
   checksum: 85e7cee763e9125a7d8a947b3a06a8b9282873936df220dd0d791d9b3315e45e40ab096b43ba71bdc99140c11a6d23fdcf686642dc119a7b2d6181004fdb24d2
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "estree-walker@npm:2.0.1"
+  checksum: 51ae3892e256162f942b6cc433f9fe313c30ffc71c9b07099168383fe211ef001a50f1df543ea8ed0753eb768079e0c1a0712540b228bbe3b544260fd113017d
   languageName: node
   linkType: hard
 
@@ -540,7 +538,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.1.6
   resolution: "glob@npm:7.1.6"
   dependencies:
@@ -643,7 +641,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-reference@npm:^1.1.2":
+"is-reference@npm:^1.2.1":
   version: 1.2.1
   resolution: "is-reference@npm:1.2.1"
   dependencies:
@@ -738,7 +736,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.25.2":
+"magic-string@npm:^0.25.7":
   version: 0.25.7
   resolution: "magic-string@npm:0.25.7"
   dependencies:
@@ -788,13 +786,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"minizlib@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "minizlib@npm:2.1.0"
+"minizlib@npm:^2.1.1":
+  version: 2.1.2
+  resolution: "minizlib@npm:2.1.2"
   dependencies:
     minipass: ^3.0.0
     yallist: ^4.0.0
-  checksum: 665346bad842df6fbfd59aa24f49a12d7971e72d8ccd4078f6e3167ad6185b64dec37d6f2cc053fe778230dd54f2a55550454ffec00b4460e14c3f20fe83be6e
+  checksum: 5a45b57b3467e5a743d87a96d7be57598a6f72eb3b7eeac237074c566bd04278766ae03bb523c32f34581c565a19e74e54ec90c6ce0630a540787c755b4c4b4e
   languageName: node
   linkType: hard
 
@@ -808,8 +806,8 @@ fsevents@~2.1.2:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 7.0.0
-  resolution: "node-gyp@npm:7.0.0"
+  version: 7.1.0
+  resolution: "node-gyp@npm:7.1.0"
   dependencies:
     env-paths: ^2.2.0
     glob: ^7.1.4
@@ -823,7 +821,7 @@ fsevents@~2.1.2:
     which: ^2.0.2
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 60e91c374739d7d17f3a41d799543a28d06a3f2e622f70a92a244d186dd12d0df1320e95b7d44cf1d40e401bf8a72f359f94ea2df95fef3ab42eecaa87c62e36
+  checksum: 78518a89047fdacb14c41586ce038584e21993f5c7ad31834c78cf06de0514fe4ef84a9034461695a10667bc81ee9ad8bc7d725cf951d4dfe1c0c175d763da59
   languageName: node
   linkType: hard
 
@@ -865,7 +863,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.0.1, object-assign@npm:^4.1.0":
+"object-assign@npm:^4.1.0":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: 66cf021898fc1b13ea573ea8635fbd5a76533f50cecbc2fcd5eee1e8029af41bcebe7023788b6d0e06cbe4401ecea075d972f78ec74467cdc571a0f1a4d1a081
@@ -1013,7 +1011,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"resolve@^1.1.6, resolve@^1.11.0, resolve@^1.17.0":
+resolve@^1.17.0:
   version: 1.17.0
   resolution: "resolve@npm:1.17.0"
   dependencies:
@@ -1022,7 +1020,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.11.0#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.17.0#builtin<compat/resolve>":
   version: 1.17.0
   resolution: "resolve@patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=3388aa"
   dependencies:
@@ -1042,27 +1040,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rollup-plugin-coffee-script@npm:^2.0.0":
+rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
   version: 2.0.0
-  resolution: "rollup-plugin-coffee-script@npm:2.0.0"
+  resolution: "rollup-plugin-coffee-script@https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d8427489acda8e5d799405d219ceeedbfdaaffb1"
   dependencies:
-    object-assign: ^4.0.1
-    rollup-plugin-node-resolve: ^3.0.0
-    rollup-pluginutils: ^2.0.1
+    "@rollup/pluginutils": ^4.0.0
   peerDependencies:
     coffeescript: 2.x
-  checksum: e316c4596eb62aab3e44efd007cbb81961e9da26e27c7ab32060f209853ffedfc76df8007a0ff0cf194c5167a2db2e5ed92afbd3ae0f11e6084d5dbb6d70a06d
-  languageName: node
-  linkType: hard
-
-"rollup-plugin-node-resolve@npm:^3.0.0":
-  version: 3.4.0
-  resolution: "rollup-plugin-node-resolve@npm:3.4.0"
-  dependencies:
-    builtin-modules: ^2.0.0
-    is-module: ^1.0.0
-    resolve: ^1.1.6
-  checksum: f6c71c23686813fb138cfb691f0a39497e80ed5ab70159aebc5e4ec9f6e692b907c54a84041803b73f744961594a6944c793f21ba4aceb82942934a131ce21cb
+  checksum: 1556e846df294c7698ba4e45d216a192c404c75b9acb26002d6e0975f1fb86b4d4aaefacf88529c11018212248909c92d2c4e9cf0e4f46126d56f6843b94cf4c
   languageName: node
   linkType: hard
 
@@ -1080,18 +1065,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rollup-pluginutils@npm:^2.0.1":
-  version: 2.8.2
-  resolution: "rollup-pluginutils@npm:2.8.2"
-  dependencies:
-    estree-walker: ^0.6.1
-  checksum: 6922c1a26df033cc3da4650106244fb2211b5ddf72a93be5010cbe51a0817c9abcab08f61cbc3f5fc906b2701df123d8c9b0dae0a34e69dd07218e34e5d357b8
-  languageName: node
-  linkType: hard
-
-"rollup@npm:^2.23.1":
-  version: 2.23.1
-  resolution: "rollup@npm:2.23.1"
+"rollup@npm:^2.26.2":
+  version: 2.26.3
+  resolution: "rollup@npm:2.26.3"
   dependencies:
     fsevents: ~2.1.2
   dependenciesMeta:
@@ -1099,7 +1075,7 @@ fsevents@~2.1.2:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 14f41440a4d58a6a25c74c365e4e1422af152cc63fc49f61fa620aa4490e99ac8ea26c613cdc85a7f5f3533f1054e6f0bfe21536b6770288732c1b14237a3b57
+  checksum: ebcf760a0dc73d9f9d2adedc87db4227f36059ce7a0c83c89ce4f37837f3c7aa3ce7c62699604ea9e6ac85573956a071237c8f91e2b441545721088b0de19ab4
   languageName: node
   linkType: hard
 
@@ -1249,29 +1225,29 @@ fsevents@~2.1.2:
   linkType: hard
 
 "tar@npm:^6.0.1":
-  version: 6.0.2
-  resolution: "tar@npm:6.0.2"
+  version: 6.0.5
+  resolution: "tar@npm:6.0.5"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
     minipass: ^3.0.0
-    minizlib: ^2.1.0
+    minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: 7d28cc13d74a87d0dcd9fa89038225f171e506882f9e4d6f44bfd3943f868e6ae9f46a6f03c82cca8ad2d4dde3384862cb7e789bfa06e3af602eec561c765787
+  checksum: 7ae26210927bdf590686db21e66d5579020ccbebda93a1adffe266eb88ca8b152c56dd8ce0df87d81e3dbe709bfe8562b29c584871ba015ec868dec9062e91ea
   languageName: node
   linkType: hard
 
 "terser@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "terser@npm:5.0.0"
+  version: 5.1.0
+  resolution: "terser@npm:5.1.0"
   dependencies:
     commander: ^2.20.0
     source-map: ~0.6.1
     source-map-support: ~0.5.12
   bin:
     terser: bin/terser
-  checksum: 807c19a8f5c5d67fbf4c463251351b9c1dfd3297fa5bf1d6e455ff0be1d1a86364e66c05872d0222d39633d5b91867c8e74d4e7a75fb54d53a387dcf5bd4b3c8
+  checksum: aa79cc0b8a4cfb93da1e00d3b497202a46bf99b7aa8a629eb16f8ec67986fc0d25ac7800fbe98dd9cf52276310eb2d219af642fb548e24eefe74a4c6ed575aae
   languageName: node
   linkType: hard
 
