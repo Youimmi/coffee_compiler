@@ -54,7 +54,7 @@ defmodule CoffeeCompiler.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      setup: [
+      update: [
         "cmd rm -rf _build .elixir_ls .pnp.js .yarn .yarnrc.yml deps erl_crash.dump mix.lock yarn.lock",
         "deps.get",
         "cmd yarn set version berry && yarn set version latest && yarn"
