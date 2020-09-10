@@ -16,6 +16,7 @@ defmodule CoffeeCompiler.MixProject do
       description: @description,
       package: package(),
       deps: deps(),
+      aliases: aliases(),
       source_url: "https://github.com/Youimmi/coffee_compiler"
     ]
   end
@@ -42,6 +43,22 @@ defmodule CoffeeCompiler.MixProject do
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
       {:ex_doc, "~> 0.22", only: :dev, runtime: false}
+    ]
+  end
+
+  # Aliases are shortcuts or tasks specific to the current project.
+  # For example, to install project dependencies and perform other setup tasks, run:
+  #
+  #     $ mix setup
+  #
+  # See the documentation for `Mix` for more info on aliases.
+  defp aliases do
+    [
+      setup: [
+        "cmd rm -rf _build .elixir_ls .pnp.js .yarn .yarnrc.yml deps erl_crash.dump mix.lock yarn.lock",
+        "deps.get",
+        "cmd yarn set version berry && yarn set version latest && yarn"
+      ]
     ]
   end
 end
