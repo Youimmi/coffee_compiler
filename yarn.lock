@@ -289,9 +289,9 @@ __metadata:
     "@rollup/plugin-commonjs": ^15.0.0
     "@rollup/plugin-node-resolve": ^9.0.0
     coffeescript: ^2.5.1
-    rollup: ^2.26.2
+    rollup: ^2.26.11
     rollup-plugin-coffee-script: Youimmi/rollup-plugin-coffee-script
-    rollup-plugin-terser: ^7.0.0
+    rollup-plugin-terser: ^7.0.2
   languageName: unknown
   linkType: soft
 
@@ -1051,7 +1051,7 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
   languageName: node
   linkType: hard
 
-"rollup-plugin-terser@npm:^7.0.0":
+"rollup-plugin-terser@npm:^7.0.2":
   version: 7.0.2
   resolution: "rollup-plugin-terser@npm:7.0.2"
   dependencies:
@@ -1065,7 +1065,7 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.26.2":
+"rollup@npm:^2.26.11":
   version: 2.26.11
   resolution: "rollup@npm:2.26.11"
   dependencies:
