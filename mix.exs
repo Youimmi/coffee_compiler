@@ -55,7 +55,7 @@ defmodule CoffeeCompiler.MixProject do
   defp aliases do
     [
       update: [
-        "cmd rm -rf _build .elixir_ls .pnp.js .yarn .yarnrc.yml deps erl_crash.dump mix.lock yarn.lock",
+        "cmd rm -rf _build .pnp.js .yarn .yarnrc.yml deps mix.lock yarn.lock",
         "deps.get",
         "cmd yarn set version berry && yarn set version latest && yarn"
       ]
