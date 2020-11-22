@@ -1,5 +1,5 @@
 # CoffeeCompiler
-CoffeeScript compiler for elixir
+[CoffeeScript](https://coffeescript.org) compiler for elixir
 
 ## Installation
 
