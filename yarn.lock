@@ -105,9 +105,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 14.14.7
-  resolution: "@types/node@npm:14.14.7"
-  checksum: 4fc8434bfe81c2a3102fa76777712ecee9e9177d43ec5929ba0dfd5a77a6c459cf10a37df64ea880a328f06973f6210eabf04b312428e309b2e8998147a6cd63
+  version: 14.14.9
+  resolution: "@types/node@npm:14.14.9"
+  checksum: df0405c708fa94831e7f71ed01cd6f859a38ab0daeae99e01afdd408905479f205556a43bafe5692c82cd126abbdc68baeb99b4b7d653c1480c289080b71622b
   languageName: node
   linkType: hard
 
@@ -288,9 +288,9 @@ __metadata:
     "@rollup/plugin-commonjs": ^16.0.0
     "@rollup/plugin-node-resolve": ^10.0.0
     coffeescript: ^2.5.1
-    rollup: ^2.33.1
+    rollup: ^2.33.3
     rollup-plugin-coffee-script: Youimmi/rollup-plugin-coffee-script
-    rollup-plugin-terser: ^7.0.2
+    rollup-plugin-terser: Youimmi/rollup-plugin-terser
   languageName: unknown
   linkType: soft
 
@@ -1052,9 +1052,9 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
   languageName: node
   linkType: hard
 
-"rollup-plugin-terser@npm:^7.0.2":
+rollup-plugin-terser@Youimmi/rollup-plugin-terser:
   version: 7.0.2
-  resolution: "rollup-plugin-terser@npm:7.0.2"
+  resolution: "rollup-plugin-terser@https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"
   dependencies:
     "@babel/code-frame": ^7.10.4
     jest-worker: ^26.2.1
@@ -1062,13 +1062,13 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
     terser: ^5.0.0
   peerDependencies:
     rollup: ^2.0.0
-  checksum: 553cc21efcea3e4d46c61fbd41cb4a82a3ab8e02ae4ce7c03f9248dea93e5a91c3624e2271490ee05b2bb481568305733b496d968d3ac9c99b777a588a336f01
+  checksum: f42cb183402e24787e127364e0cd2bca31519a262ec10e3490f2a72590cc49dc9be60472d0632ea1af5a7fb2f8bf3a2b2239a8c8b46d870dc28d506d6aa9f8fe
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.33.1":
-  version: 2.33.1
-  resolution: "rollup@npm:2.33.1"
+"rollup@npm:^2.33.3":
+  version: 2.33.3
+  resolution: "rollup@npm:2.33.3"
   dependencies:
     fsevents: ~2.1.2
   dependenciesMeta:
@@ -1076,7 +1076,7 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: cf727ca4d1c6d6ad7679c8cf0a8258e41339d7d3eef5a7671cd54f4506c23f5492f6331c05d76697fa608d870407a5d2eb796647ce6add68101ca3bbb77c7d66
+  checksum: b14dc27a1c766a90d4c6b98c8cbedc79185a26f1ccb0eae23f82e5edbc2ec21951e2244de918aff696f9ee783c6cb8c1c788c60e3890c414794c19f7e3e80599
   languageName: node
   linkType: hard
 
@@ -1247,15 +1247,15 @@ rollup-plugin-coffee-script@Youimmi/rollup-plugin-coffee-script:
   linkType: hard
 
 "terser@npm:^5.0.0":
-  version: 5.3.8
-  resolution: "terser@npm:5.3.8"
+  version: 5.5.0
+  resolution: "terser@npm:5.5.0"
   dependencies:
     commander: ^2.20.0
     source-map: ~0.7.2
     source-map-support: ~0.5.19
   bin:
     terser: bin/terser
-  checksum: 3fc070378ba9981d8088a4012060f16428a97dc8f98d5a731b2ab51b8c9bc8cb651ca068aef499faad863584ae4d4883872c4f51db053bc2575c2e0bc11ab411
+  checksum: 6483029470c426dab58b2d84a7a317f1b3a3528228e1d0f38b9b59023dd9185f5f6bd2b1906daabdac4e3ce4ca133815db5b4151cc03d53946e9e9b25f62ddd4
   languageName: node
   linkType: hard
 
