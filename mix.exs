@@ -1,7 +1,7 @@
 defmodule CoffeeCompiler.MixProject do
   use Mix.Project
 
-  @version "0.1.2"
+  @version "0.2.0"
 
   @description """
   CoffeeScript core compiler for Elixir
@@ -11,7 +11,7 @@ defmodule CoffeeCompiler.MixProject do
     [
       app: :coffee_compiler,
       version: @version,
-      elixir: "~> 1.10",
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       description: @description,
       package: package(),
@@ -40,9 +40,9 @@ defmodule CoffeeCompiler.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
-      {:ex_doc, "~> 0.22", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.23", only: :dev, runtime: false}
     ]
   end
 
