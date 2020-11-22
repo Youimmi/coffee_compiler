@@ -33,6 +33,7 @@ coffee_compiler-*
 # Ignore hidden files
 .*
 !.formatter.exs
+!.github
 !.gitignore
 !.keep
 
