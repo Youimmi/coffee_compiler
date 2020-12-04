@@ -2,62 +2,51 @@ defmodule CoffeeTest do
   @moduledoc false
 
   use ExUnit.Case, async: true
-  import ExUnit.Callbacks, only: [setup_all: 1]
+  import ExUnit.Assertions, only: [assert: 1]
 
   import Support.TestHelpers,
     only: [
-      assert: 3,
-      compile: 1,
+      compile: 2,
       fixture_js: 1,
-      fixtures_path: 0,
       perform_async: 2
     ]
 
-  @fixtures_path quote do: unquote(fixtures_path())
+  ExUnit.Case.register_describe_attribute(__MODULE__, :describe_fixtures)
 
-  setup_all do
-    {:ok, extensions: ~w[js coffee]a}
-  end
+  @fixtures_path "test/fixtures/"
+  @options assets_path: @fixtures_path
 
-  test "Coffee.compile/2 compiles JS or Coffee to JS", %{extensions: extensions} do
-    sources = Enum.map(extensions, &{&1, @fixtures_path <> "source.#{&1}"})
+  perform_async([js: "JS", coffee: "CoffeeScript"], fn {ext, ext_name} ->
+    source_file_path = @fixtures_path <> "source.#{ext}"
+    blank_file_path = @fixtures_path <> "blank.#{ext}"
+    expected_js = fixture_js(@fixtures_path <> "compiled.js")
 
-    perform_async(extensions, fn ext_name ->
-      assert(
-        compile(sources[ext_name]),
-        fixture_js(@fixtures_path <> "compiled.js"),
-        &(&2 == &1)
-      )
-    end)
-  end
+    describe "Compile the #{ext_name} file into JS" do
+      test "Coffee.compile/2 compiles #{ext_name} into JS" do
+        result = unquote(compile(source_file_path, @options))
 
-  test "Coffee.compile/2 compiles JS and Coffee to JS", %{extensions: extensions} do
-    sources = Enum.map(extensions, &{&1, @fixtures_path <> "blank.#{&1}"})
+        assert(result == unquote(expected_js))
+      end
 
-    perform_async(extensions, fn ext_name ->
-      assert(
-        compile(sources[ext_name]),
-        "\n",
-        &(&2 == &1)
-      )
-    end)
-  end
+      test "Coffee.compile/2 returns \"\n\" if a blank #{ext_name} file is passed" do
+        result = unquote(compile(blank_file_path, @options))
 
-  test "@import works as expected with load path" do
+        assert(result == "\n")
+      end
+    end
+  end)
+
+  describe "Compile imported files" do
+    @result compile(@fixtures_path <> "app.coffee", @options)
+
     perform_async(
-      [
-        ~r/var o;o=function\(o\)\{return`this is Foo file: \$\{o\}`\}/,
-        ~r/console.log\(\"text\"\)/,
-        ~r/console.log\(o\)/,
-        ~r/console.log\(2\)/,
-        ~r/console.log\(\"Application\"\)/
-      ],
-      fn regexp ->
-        assert(
-          regexp,
-          compile(@fixtures_path <> "app.coffee"),
-          &Regex.match?(&2, &1)
-        )
+      ["var o;o=function(o){return`this is Foo file: ${o}`}", "console.log(\"text\")", "console.log(o)", "console.log(2)", "console.log(\"Application\")"],
+      fn expected_string ->
+        test "@import works as expected with load path (#{expected_string})" do
+          expected = ~r/#{unquote(Regex.escape(expected_string))}/
+
+          assert(Regex.match?(expected, @result))
+        end
       end
     )
   end
