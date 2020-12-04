@@ -4,7 +4,10 @@ defmodule Coffee.Compiler do
   """
 
   def compile(coffee, opts) do
-    opts = Map.new(opts)
+    assets_path =
+      opts
+      |> Map.new()
+      |> Map.get(:assets_path, "assets")
 
     args = [
       "workspace",
@@ -15,9 +18,7 @@ defmodule Coffee.Compiler do
       Application.app_dir(:coffee_compiler, "priv/rollup.config.js")
     ]
 
-    assets_path = Map.get(opts, :assets_path) || "assets"
     {js, _} = System.cmd("yarn", args, cd: assets_path)
-
     {:ok, js}
   end
 end
