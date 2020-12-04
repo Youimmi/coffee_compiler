@@ -4,7 +4,6 @@ defmodule Coffee do
   """
 
   def compile(source, opts \\ []) do
-    opts = Map.new(opts)
     coffee = source |> String.trim()
     Coffee.Compiler.compile(coffee, opts)
   end
