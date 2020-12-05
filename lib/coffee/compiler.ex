@@ -3,6 +3,14 @@ defmodule Coffee.Compiler do
   Compiles CoffeeScript source into JS source
   """
 
+  @doc """
+  Compiles a CoffeeScript into JS
+  """
+  def compile(coffee, opts) do
+    assets_path =
+      opts
+      |> Map.new()
+      |> Map.get(:assets_path, "assets")
 
     args = [
       "workspace",
