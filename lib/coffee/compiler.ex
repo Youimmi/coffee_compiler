@@ -3,10 +3,7 @@ defmodule Coffee.Compiler do
   Compiles CoffeeScript source into JS source
   """
 
-  @doc """
-  Compiles a CoffeeScript into JS
-  """
-  def compile(coffee, _opts) do
+
     args = [
       "workspace",
       "coffee_compiler",
@@ -16,7 +13,7 @@ defmodule Coffee.Compiler do
       Application.app_dir(:coffee_compiler, "priv/rollup.config.js")
     ]
 
-    {js, _} = System.cmd("yarn", args, cd: "assets")
+    {js, _} = System.cmd("yarn", args, cd: assets_path)
     {:ok, js}
   end
 end
