@@ -39,12 +39,21 @@ defmodule CoffeeTest do
   describe "Compile imported files" do
     @result compile(@fixtures_path <> "app.coffee", @options)
 
-    perform_async(fn expected_string ->
-      test "@import works as expected with load path (#{expected_string})" do
-        expected = ~r/#{unquote(Regex.escape(expected_string))}/
+    perform_async(
+      [
+        "var o;o=function(o){return`this is Foo file: ${o}`}",
+        "console.log(\"text\")",
+        "console.log(o)",
+        "console.log(2)",
+        "console.log(\"Application\")"
+      ],
+      fn expected_string ->
+        test "@import works as expected with load path (#{expected_string})" do
+          expected = ~r/#{unquote(Regex.escape(expected_string))}/
 
-        assert(Regex.match?(expected, @result))
+          assert(Regex.match?(expected, @result))
+        end
       end
-    end)
+    )
   end
 end
