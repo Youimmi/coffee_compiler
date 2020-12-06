@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-commonjs", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:16.0.0"],
             ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:10.0.0"],
             ["coffeescript", "npm:2.5.1"],
-            ["rollup", "npm:2.34.1"],
+            ["rollup", "npm:2.34.2"],
             ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d8427489acda8e5d799405d219ceeedbfdaaffb1"],
             ["rollup-plugin-terser", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"]
           ],
@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-reference", "npm:1.2.1"],
             ["magic-string", "npm:0.25.7"],
             ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"],
-            ["rollup", "npm:2.34.1"]
+            ["rollup", "npm:2.34.2"]
           ],
           "packagePeers": [
             "@types/rollup",
@@ -126,7 +126,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["deepmerge", "npm:4.2.2"],
             ["is-module", "npm:1.0.0"],
             ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"],
-            ["rollup", "npm:2.34.1"]
+            ["rollup", "npm:2.34.2"]
           ],
           "packagePeers": [
             "@types/rollup",
@@ -173,7 +173,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/rollup", null],
             ["estree-walker", "npm:1.0.1"],
             ["picomatch", "npm:2.2.2"],
-            ["rollup", "npm:2.34.1"]
+            ["rollup", "npm:2.34.2"]
           ],
           "packagePeers": [
             "@types/rollup",
@@ -426,7 +426,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-commonjs", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:16.0.0"],
             ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:10.0.0"],
             ["coffeescript", "npm:2.5.1"],
-            ["rollup", "npm:2.34.1"],
+            ["rollup", "npm:2.34.2"],
             ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d8427489acda8e5d799405d219ceeedbfdaaffb1"],
             ["rollup-plugin-terser", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"]
           ],
@@ -1306,10 +1306,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rollup", [
-        ["npm:2.34.1", {
-          "packageLocation": "./.yarn/cache/rollup-npm-2.34.1-dccbf5454b-1e714afe5e.zip/node_modules/rollup/",
+        ["npm:2.34.2", {
+          "packageLocation": "./.yarn/cache/rollup-npm-2.34.2-cda0e76df1-d1baf78ea2.zip/node_modules/rollup/",
           "packageDependencies": [
-            ["rollup", "npm:2.34.1"],
+            ["rollup", "npm:2.34.2"],
             ["fsevents", "patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=11e9ea"]
           ],
           "linkType": "HARD",
@@ -1353,7 +1353,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/code-frame", "npm:7.10.4"],
             ["@types/rollup", null],
             ["jest-worker", "npm:26.6.2"],
-            ["rollup", "npm:2.34.1"],
+            ["rollup", "npm:2.34.2"],
             ["serialize-javascript", "npm:4.0.0"],
             ["terser", "npm:5.5.1"]
           ],
