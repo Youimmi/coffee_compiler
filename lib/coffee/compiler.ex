@@ -4,11 +4,6 @@ defmodule Coffee.Compiler do
   """
 
   def compile(coffee, _opts) do
-    # assets_path =
-    #   opts
-    #   |> Map.new()
-    #   |> Map.get(:assets_path, "assets")
-
     root_dir = Application.app_dir(:coffee_compiler, "priv")
     config_dir = root_dir <> "/rollup.config.js"
 
