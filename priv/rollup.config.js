@@ -12,14 +12,9 @@ export default {
   },
   plugins: [
     coffee(),
-    resolve({
-      extensions,
-      rootDir: '../assets'
-    }),
+    resolve({ extensions, rootDir: '../assets' }),
     commonjs(extensions),
-    terser({
-      comments: false
-    }),
+    terser({ format: { comments: false } }),
     compiler()
   ]
 }
