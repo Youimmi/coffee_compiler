@@ -6,9 +6,7 @@ import { terser } from 'rollup-plugin-terser'
 const extensions = { extensions: ['.js', '.coffee'] }
 
 export default {
-  output: {
-    format: 'es'
-  },
+  output: { format: 'es' },
   plugins: [
     coffee(),
     resolve({ extensions, rootDir: '../assets' }),
