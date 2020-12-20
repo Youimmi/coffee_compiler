@@ -13,6 +13,7 @@ defmodule CoffeeCompiler.MixProject do
       version: @version,
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
+      compilers: Mix.compilers() ++ [:yarn],
       description: @description,
       package: package(),
       deps: deps(),
