@@ -1,7 +1,8 @@
 import coffee from 'rollup-plugin-coffee-script'
 import commonjs from '@rollup/plugin-commonjs'
-import { terser } from 'rollup-plugin-terser'
+import compiler from '@ampproject/rollup-plugin-closure-compiler'
 import resolve from '@rollup/plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
 
 const extensions = { extensions: ['.js', '.coffee'] }
 
@@ -16,6 +17,9 @@ export default {
       rootDir: '../assets'
     }),
     commonjs(extensions),
-    terser()
+    terser({
+      comments: false
+    }),
+    compiler()
   ]
 }
