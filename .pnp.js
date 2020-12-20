@@ -37,13 +37,95 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@ampproject/rollup-plugin-closure-compiler", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:0.26.0"],
             ["@rollup/plugin-commonjs", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:17.0.0"],
-            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.0"],
+            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.1"],
             ["coffeescript", "npm:2.5.1"],
             ["rollup", "npm:2.35.1"],
-            ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d98a7b02ddfdd3571a7eda0d8f947c4c7e458dcb"]
+            ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d98a7b02ddfdd3571a7eda0d8f947c4c7e458dcb"],
+            ["rollup-plugin-terser", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@ampproject/remapping", [
+        ["npm:0.2.0", {
+          "packageLocation": "./.yarn/cache/@ampproject-remapping-npm-0.2.0-c4b3cd4b11-a2605d3382.zip/node_modules/@ampproject/remapping/",
+          "packageDependencies": [
+            ["@ampproject/remapping", "npm:0.2.0"],
+            ["@jridgewell/resolve-uri", "npm:1.0.0"],
+            ["sourcemap-codec", "npm:1.4.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@ampproject/rollup-plugin-closure-compiler", [
+        ["npm:0.26.0", {
+          "packageLocation": "./.yarn/cache/@ampproject-rollup-plugin-closure-compiler-npm-0.26.0-b8c3c179f6-a144356e33.zip/node_modules/@ampproject/rollup-plugin-closure-compiler/",
+          "packageDependencies": [
+            ["@ampproject/rollup-plugin-closure-compiler", "npm:0.26.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:0.26.0", {
+          "packageLocation": "./.yarn/$$virtual/@ampproject-rollup-plugin-closure-compiler-virtual-54f5cc1410/0/cache/@ampproject-rollup-plugin-closure-compiler-npm-0.26.0-b8c3c179f6-a144356e33.zip/node_modules/@ampproject/rollup-plugin-closure-compiler/",
+          "packageDependencies": [
+            ["@ampproject/rollup-plugin-closure-compiler", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:0.26.0"],
+            ["@ampproject/remapping", "npm:0.2.0"],
+            ["@types/rollup", null],
+            ["acorn", "npm:7.2.0"],
+            ["acorn-walk", "npm:7.1.1"],
+            ["estree-walker", "npm:2.0.1"],
+            ["google-closure-compiler", "npm:20200517.0.0"],
+            ["magic-string", "npm:0.25.7"],
+            ["rollup", "npm:2.35.1"],
+            ["uuid", "npm:8.1.0"]
+          ],
+          "packagePeers": [
+            "@types/rollup",
+            "rollup"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@babel/code-frame", [
+        ["npm:7.12.11", {
+          "packageLocation": "./.yarn/cache/@babel-code-frame-npm-7.12.11-1a9a1b277f-033d3fb3bf.zip/node_modules/@babel/code-frame/",
+          "packageDependencies": [
+            ["@babel/code-frame", "npm:7.12.11"],
+            ["@babel/highlight", "npm:7.10.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@babel/helper-validator-identifier", [
+        ["npm:7.12.11", {
+          "packageLocation": "./.yarn/cache/@babel-helper-validator-identifier-npm-7.12.11-e33455648e-18de432203.zip/node_modules/@babel/helper-validator-identifier/",
+          "packageDependencies": [
+            ["@babel/helper-validator-identifier", "npm:7.12.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@babel/highlight", [
+        ["npm:7.10.4", {
+          "packageLocation": "./.yarn/cache/@babel-highlight-npm-7.10.4-c7ff18fbba-c167b938af.zip/node_modules/@babel/highlight/",
+          "packageDependencies": [
+            ["@babel/highlight", "npm:7.10.4"],
+            ["@babel/helper-validator-identifier", "npm:7.12.11"],
+            ["chalk", "npm:2.4.2"],
+            ["js-tokens", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@jridgewell/resolve-uri", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-1.0.0-86b2816443-fb53842424.zip/node_modules/@jridgewell/resolve-uri/",
+          "packageDependencies": [
+            ["@jridgewell/resolve-uri", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@rollup/plugin-commonjs", [
@@ -76,17 +158,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@rollup/plugin-node-resolve", [
-        ["npm:11.0.0", {
-          "packageLocation": "./.yarn/cache/@rollup-plugin-node-resolve-npm-11.0.0-6c6418c3a4-531a760fcd.zip/node_modules/@rollup/plugin-node-resolve/",
+        ["npm:11.0.1", {
+          "packageLocation": "./.yarn/cache/@rollup-plugin-node-resolve-npm-11.0.1-4c07e663b2-bbec78fba9.zip/node_modules/@rollup/plugin-node-resolve/",
           "packageDependencies": [
-            ["@rollup/plugin-node-resolve", "npm:11.0.0"]
+            ["@rollup/plugin-node-resolve", "npm:11.0.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.0", {
-          "packageLocation": "./.yarn/$$virtual/@rollup-plugin-node-resolve-virtual-ec54d00141/0/cache/@rollup-plugin-node-resolve-npm-11.0.0-6c6418c3a4-531a760fcd.zip/node_modules/@rollup/plugin-node-resolve/",
+        ["virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@rollup-plugin-node-resolve-virtual-82bc1d9427/0/cache/@rollup-plugin-node-resolve-npm-11.0.1-4c07e663b2-bbec78fba9.zip/node_modules/@rollup/plugin-node-resolve/",
           "packageDependencies": [
-            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.0"],
+            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.1"],
             ["@rollup/pluginutils", "virtual:a12962b5ab73806e4367267edf17fb3a414258f6122bdcb7ec4747bf721e657e59b29259dfe0317cc3b6fe99d8d9e18d765d074761d069591a1d145bf54b2092#npm:3.1.0"],
             ["@types/resolve", "npm:1.17.1"],
             ["@types/rollup", null],
@@ -167,10 +249,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.14.13", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.13-9e58dadb81-a879dae2e0.zip/node_modules/@types/node/",
+        ["npm:14.14.14", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.14-83cbbb70d3-dea8d257d4.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.14.13"]
+            ["@types/node", "npm:14.14.14"]
           ],
           "linkType": "HARD",
         }]
@@ -180,7 +262,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-resolve-npm-1.17.1-9a8396bef2-8e72a73574.zip/node_modules/@types/resolve/",
           "packageDependencies": [
             ["@types/resolve", "npm:1.17.1"],
-            ["@types/node", "npm:14.14.13"]
+            ["@types/node", "npm:14.14.14"]
           ],
           "linkType": "HARD",
         }]
@@ -190,6 +272,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/abbrev-npm-1.1.1-3659247eab-9f9236a3cc.zip/node_modules/abbrev/",
           "packageDependencies": [
             ["abbrev", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["acorn", [
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/acorn-npm-7.2.0-b4d63d132a-e1d0dcafc1.zip/node_modules/acorn/",
+          "packageDependencies": [
+            ["acorn", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["acorn-walk", [
+        ["npm:7.1.1", {
+          "packageLocation": "./.yarn/cache/acorn-walk-npm-7.1.1-492300a130-7d465101e6.zip/node_modules/acorn-walk/",
+          "packageDependencies": [
+            ["acorn-walk", "npm:7.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -219,6 +319,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ansi-regex-npm-3.0.0-be0b845911-2e3c40d429.zip/node_modules/ansi-regex/",
           "packageDependencies": [
             ["ansi-regex", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ansi-styles", [
+        ["npm:3.2.1", {
+          "packageLocation": "./.yarn/cache/ansi-styles-npm-3.2.1-8cb8107983-456e1c23d9.zip/node_modules/ansi-styles/",
+          "packageDependencies": [
+            ["ansi-styles", "npm:3.2.1"],
+            ["color-convert", "npm:1.9.3"]
           ],
           "linkType": "HARD",
         }]
@@ -319,6 +429,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["buffer-from", [
+        ["npm:1.1.1", {
+          "packageLocation": "./.yarn/cache/buffer-from-npm-1.1.1-22917b8ed8-540ceb79c4.zip/node_modules/buffer-from/",
+          "packageDependencies": [
+            ["buffer-from", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["builtin-modules", [
         ["npm:3.1.0", {
           "packageLocation": "./.yarn/cache/builtin-modules-npm-3.1.0-fb00ef3f7a-54f062393c.zip/node_modules/builtin-modules/",
@@ -337,11 +456,62 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["chalk", [
+        ["npm:2.4.2", {
+          "packageLocation": "./.yarn/cache/chalk-npm-2.4.2-3ea16dd91e-22c7b7b5bc.zip/node_modules/chalk/",
+          "packageDependencies": [
+            ["chalk", "npm:2.4.2"],
+            ["ansi-styles", "npm:3.2.1"],
+            ["escape-string-regexp", "npm:1.0.5"],
+            ["supports-color", "npm:5.5.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["chownr", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/chownr-npm-2.0.0-638f1c9c61-b06ba0bf42.zip/node_modules/chownr/",
           "packageDependencies": [
             ["chownr", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["clone", [
+        ["npm:2.1.2", {
+          "packageLocation": "./.yarn/cache/clone-npm-2.1.2-1d491c6629-85232d6601.zip/node_modules/clone/",
+          "packageDependencies": [
+            ["clone", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["clone-buffer", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/clone-buffer-npm-1.0.0-7a16490ce4-70d92e1482.zip/node_modules/clone-buffer/",
+          "packageDependencies": [
+            ["clone-buffer", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["clone-stats", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/clone-stats-npm-1.0.0-cca25a0a42-fc70411afb.zip/node_modules/clone-stats/",
+          "packageDependencies": [
+            ["clone-stats", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cloneable-readable", [
+        ["npm:1.1.3", {
+          "packageLocation": "./.yarn/cache/cloneable-readable-npm-1.1.3-a5888ff6e9-b7dda8125e.zip/node_modules/cloneable-readable/",
+          "packageDependencies": [
+            ["cloneable-readable", "npm:1.1.3"],
+            ["inherits", "npm:2.0.4"],
+            ["process-nextick-args", "npm:2.0.1"],
+            ["readable-stream", "npm:2.3.7"]
           ],
           "linkType": "HARD",
         }]
@@ -360,11 +530,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["coffee_compiler", "workspace:."],
+            ["@ampproject/rollup-plugin-closure-compiler", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:0.26.0"],
             ["@rollup/plugin-commonjs", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:17.0.0"],
-            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.0"],
+            ["@rollup/plugin-node-resolve", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#npm:11.0.1"],
             ["coffeescript", "npm:2.5.1"],
             ["rollup", "npm:2.35.1"],
-            ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d98a7b02ddfdd3571a7eda0d8f947c4c7e458dcb"]
+            ["rollup-plugin-coffee-script", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-coffee-script.git#commit=d98a7b02ddfdd3571a7eda0d8f947c4c7e458dcb"],
+            ["rollup-plugin-terser", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"]
           ],
           "linkType": "SOFT",
         }]
@@ -378,12 +550,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["color-convert", [
+        ["npm:1.9.3", {
+          "packageLocation": "./.yarn/cache/color-convert-npm-1.9.3-1fe690075e-5f244daa3d.zip/node_modules/color-convert/",
+          "packageDependencies": [
+            ["color-convert", "npm:1.9.3"],
+            ["color-name", "npm:1.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["color-name", [
+        ["npm:1.1.3", {
+          "packageLocation": "./.yarn/cache/color-name-npm-1.1.3-728b7b5d39-d8b91bb90a.zip/node_modules/color-name/",
+          "packageDependencies": [
+            ["color-name", "npm:1.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["combined-stream", [
         ["npm:1.0.8", {
           "packageLocation": "./.yarn/cache/combined-stream-npm-1.0.8-dc14d4a63a-5791ce7944.zip/node_modules/combined-stream/",
           "packageDependencies": [
             ["combined-stream", "npm:1.0.8"],
             ["delayed-stream", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["commander", [
+        ["npm:2.20.3", {
+          "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-b73428e97d.zip/node_modules/commander/",
+          "packageDependencies": [
+            ["commander", "npm:2.20.3"]
           ],
           "linkType": "HARD",
         }]
@@ -481,11 +681,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["escape-string-regexp", [
+        ["npm:1.0.5", {
+          "packageLocation": "./.yarn/cache/escape-string-regexp-npm-1.0.5-3284de402f-f9484b8b4c.zip/node_modules/escape-string-regexp/",
+          "packageDependencies": [
+            ["escape-string-regexp", "npm:1.0.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["estree-walker", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/estree-walker-npm-1.0.1-e916593b23-85e7cee763.zip/node_modules/estree-walker/",
           "packageDependencies": [
             ["estree-walker", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/estree-walker-npm-2.0.1-fb1693c2a7-51ae3892e2.zip/node_modules/estree-walker/",
+          "packageDependencies": [
+            ["estree-walker", "npm:2.0.1"]
           ],
           "linkType": "HARD",
         }],
@@ -641,6 +857,69 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["google-closure-compiler", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/cache/google-closure-compiler-npm-20200517.0.0-127a7090f6-7b792fb661.zip/node_modules/google-closure-compiler/",
+          "packageDependencies": [
+            ["google-closure-compiler", "npm:20200517.0.0"],
+            ["chalk", "npm:2.4.2"],
+            ["google-closure-compiler-java", "npm:20200517.0.0"],
+            ["google-closure-compiler-js", "npm:20200517.0.0"],
+            ["google-closure-compiler-linux", "npm:20200517.0.0"],
+            ["google-closure-compiler-osx", "npm:20200517.0.0"],
+            ["google-closure-compiler-windows", "npm:20200517.0.0"],
+            ["minimist", "npm:1.2.5"],
+            ["vinyl", "npm:2.2.1"],
+            ["vinyl-sourcemaps-apply", "npm:0.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-closure-compiler-java", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/unplugged/google-closure-compiler-java-npm-20200517.0.0-fad740016c/node_modules/google-closure-compiler-java/",
+          "packageDependencies": [
+            ["google-closure-compiler-java", "npm:20200517.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-closure-compiler-js", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/cache/google-closure-compiler-js-npm-20200517.0.0-f5a60f1ee3-32687b6f6e.zip/node_modules/google-closure-compiler-js/",
+          "packageDependencies": [
+            ["google-closure-compiler-js", "npm:20200517.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-closure-compiler-linux", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/cache/google-closure-compiler-linux-npm-20200517.0.0-e25d7a49fa-1b2f59a0f4.zip/node_modules/google-closure-compiler-linux/",
+          "packageDependencies": [
+            ["google-closure-compiler-linux", "npm:20200517.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-closure-compiler-osx", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/cache/google-closure-compiler-osx-npm-20200517.0.0-efb94468b8-3384b1cd1c.zip/node_modules/google-closure-compiler-osx/",
+          "packageDependencies": [
+            ["google-closure-compiler-osx", "npm:20200517.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-closure-compiler-windows", [
+        ["npm:20200517.0.0", {
+          "packageLocation": "./.yarn/unplugged/google-closure-compiler-windows-npm-20200517.0.0-a29137e24e/node_modules/google-closure-compiler-windows/",
+          "packageDependencies": [
+            ["google-closure-compiler-windows", "npm:20200517.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["graceful-fs", [
         ["npm:4.2.4", {
           "packageLocation": "./.yarn/cache/graceful-fs-npm-4.2.4-734467635f-d095ee4dc6.zip/node_modules/graceful-fs/",
@@ -676,6 +955,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["has", "npm:1.0.3"],
             ["function-bind", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["has-flag", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/has-flag-npm-3.0.0-16ac11fe05-63aade480d.zip/node_modules/has-flag/",
+          "packageDependencies": [
+            ["has-flag", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/has-flag-npm-4.0.0-32af9f0536-2e5391139d.zip/node_modules/has-flag/",
+          "packageDependencies": [
+            ["has-flag", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -803,6 +1098,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["jest-worker", [
+        ["npm:26.6.2", {
+          "packageLocation": "./.yarn/cache/jest-worker-npm-26.6.2-46cbcd449f-5eb349833b.zip/node_modules/jest-worker/",
+          "packageDependencies": [
+            ["jest-worker", "npm:26.6.2"],
+            ["@types/node", "npm:14.14.14"],
+            ["merge-stream", "npm:2.0.0"],
+            ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["js-tokens", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/js-tokens-npm-4.0.0-0ac852e9e2-1fc4e4667a.zip/node_modules/js-tokens/",
+          "packageDependencies": [
+            ["js-tokens", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["jsbn", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/jsbn-npm-0.1.1-0eb7132404-b530d48a64.zip/node_modules/jsbn/",
@@ -872,6 +1188,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["merge-stream", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/merge-stream-npm-2.0.0-2ac83efea5-cde834809a.zip/node_modules/merge-stream/",
+          "packageDependencies": [
+            ["merge-stream", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["mime-db", [
         ["npm:1.44.0", {
           "packageLocation": "./.yarn/cache/mime-db-npm-1.44.0-d6ab7b4e20-b4e3b21414.zip/node_modules/mime-db/",
@@ -897,6 +1222,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["minimatch", "npm:3.0.4"],
             ["brace-expansion", "npm:1.1.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["minimist", [
+        ["npm:1.2.5", {
+          "packageLocation": "./.yarn/cache/minimist-npm-1.2.5-ced0e1f617-b77b859014.zip/node_modules/minimist/",
+          "packageDependencies": [
+            ["minimist", "npm:1.2.5"]
           ],
           "linkType": "HARD",
         }]
@@ -1082,6 +1416,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["randombytes", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/randombytes-npm-2.1.0-e3da76bccf-ede2693af0.zip/node_modules/randombytes/",
+          "packageDependencies": [
+            ["randombytes", "npm:2.1.0"],
+            ["safe-buffer", "npm:5.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["readable-stream", [
         ["npm:2.3.7", {
           "packageLocation": "./.yarn/cache/readable-stream-npm-2.3.7-77b22a9818-6e38265606.zip/node_modules/readable-stream/",
@@ -1094,6 +1438,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safe-buffer", "npm:5.1.2"],
             ["string_decoder", "npm:1.1.1"],
             ["util-deprecate", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["remove-trailing-separator", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/remove-trailing-separator-npm-1.1.0-16d7231316-17dadf3d1f.zip/node_modules/remove-trailing-separator/",
+          "packageDependencies": [
+            ["remove-trailing-separator", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["replace-ext", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/replace-ext-npm-1.0.1-ab0bac6614-29b0f4ec6f.zip/node_modules/replace-ext/",
+          "packageDependencies": [
+            ["replace-ext", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -1181,6 +1543,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["rollup-plugin-terser", [
+        ["https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd", {
+          "packageLocation": "./.yarn/cache/rollup-plugin-terser-https-55e3a685c8-f42cb18340.zip/node_modules/rollup-plugin-terser/",
+          "packageDependencies": [
+            ["rollup-plugin-terser", "https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd", {
+          "packageLocation": "./.yarn/$$virtual/rollup-plugin-terser-virtual-d94740c1c5/0/cache/rollup-plugin-terser-https-55e3a685c8-f42cb18340.zip/node_modules/rollup-plugin-terser/",
+          "packageDependencies": [
+            ["rollup-plugin-terser", "virtual:ca54133995164d39e806c7af6805416a728ec4bf6e103af7dd3205fc2299e5ff5833e47b495759287a12588ece5a472a3c4297b24fbe0de3e50c76360049b5ac#https://github.com/Youimmi/rollup-plugin-terser.git#commit=6b50b7fadbe8812d13452def82c36133f58581fd"],
+            ["@babel/code-frame", "npm:7.12.11"],
+            ["@types/rollup", null],
+            ["jest-worker", "npm:26.6.2"],
+            ["rollup", "npm:2.35.1"],
+            ["serialize-javascript", "npm:4.0.0"],
+            ["terser", "npm:5.5.1"]
+          ],
+          "packagePeers": [
+            "@types/rollup",
+            "rollup"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["safe-buffer", [
         ["npm:5.1.2", {
           "packageLocation": "./.yarn/cache/safe-buffer-npm-5.1.2-c27fedf6c4-2708587c1b.zip/node_modules/safe-buffer/",
@@ -1216,6 +1604,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["serialize-javascript", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/serialize-javascript-npm-4.0.0-b4aeff413b-f17305aaab.zip/node_modules/serialize-javascript/",
+          "packageDependencies": [
+            ["serialize-javascript", "npm:4.0.0"],
+            ["randombytes", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["set-blocking", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/set-blocking-npm-2.0.0-49e2cffa24-0ac2403b0c.zip/node_modules/set-blocking/",
@@ -1230,6 +1628,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/signal-exit-npm-3.0.3-5a2d797648-f8f3fec95c.zip/node_modules/signal-exit/",
           "packageDependencies": [
             ["signal-exit", "npm:3.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["source-map", [
+        ["npm:0.5.7", {
+          "packageLocation": "./.yarn/cache/source-map-npm-0.5.7-7c3f035429-737face965.zip/node_modules/source-map/",
+          "packageDependencies": [
+            ["source-map", "npm:0.5.7"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.6.1", {
+          "packageLocation": "./.yarn/cache/source-map-npm-0.6.1-1a3621db16-8647829a06.zip/node_modules/source-map/",
+          "packageDependencies": [
+            ["source-map", "npm:0.6.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.7.3", {
+          "packageLocation": "./.yarn/cache/source-map-npm-0.7.3-e3b4f7982a-351ce26ffa.zip/node_modules/source-map/",
+          "packageDependencies": [
+            ["source-map", "npm:0.7.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["source-map-support", [
+        ["npm:0.5.19", {
+          "packageLocation": "./.yarn/cache/source-map-support-npm-0.5.19-65b33ae61e-59d4efaae9.zip/node_modules/source-map-support/",
+          "packageDependencies": [
+            ["source-map-support", "npm:0.5.19"],
+            ["buffer-from", "npm:1.1.1"],
+            ["source-map", "npm:0.6.1"]
           ],
           "linkType": "HARD",
         }]
@@ -1310,6 +1742,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["supports-color", [
+        ["npm:5.5.0", {
+          "packageLocation": "./.yarn/cache/supports-color-npm-5.5.0-183ac537bc-edacee6425.zip/node_modules/supports-color/",
+          "packageDependencies": [
+            ["supports-color", "npm:5.5.0"],
+            ["has-flag", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/supports-color-npm-7.2.0-606bfcf7da-8e57067c39.zip/node_modules/supports-color/",
+          "packageDependencies": [
+            ["supports-color", "npm:7.2.0"],
+            ["has-flag", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tar", [
         ["npm:6.0.5", {
           "packageLocation": "./.yarn/cache/tar-npm-6.0.5-a5360f3389-7ae2621092.zip/node_modules/tar/",
@@ -1321,6 +1771,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minizlib", "npm:2.1.2"],
             ["mkdirp", "npm:1.0.4"],
             ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["terser", [
+        ["npm:5.5.1", {
+          "packageLocation": "./.yarn/cache/terser-npm-5.5.1-6fc0e0b56a-f96abd0fb4.zip/node_modules/terser/",
+          "packageDependencies": [
+            ["terser", "npm:5.5.1"],
+            ["commander", "npm:2.20.3"],
+            ["source-map", "npm:0.7.3"],
+            ["source-map-support", "npm:0.5.19"]
           ],
           "linkType": "HARD",
         }]
@@ -1381,6 +1843,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uuid", "npm:3.4.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/uuid-npm-8.1.0-e66b0feced-e212e1e9dc.zip/node_modules/uuid/",
+          "packageDependencies": [
+            ["uuid", "npm:8.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["verror", [
@@ -1391,6 +1860,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["assert-plus", "npm:1.0.0"],
             ["core-util-is", "npm:1.0.2"],
             ["extsprintf", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vinyl", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/vinyl-npm-2.2.1-6b14799ad3-9f4088a075.zip/node_modules/vinyl/",
+          "packageDependencies": [
+            ["vinyl", "npm:2.2.1"],
+            ["clone", "npm:2.1.2"],
+            ["clone-buffer", "npm:1.0.0"],
+            ["clone-stats", "npm:1.0.0"],
+            ["cloneable-readable", "npm:1.1.3"],
+            ["remove-trailing-separator", "npm:1.1.0"],
+            ["replace-ext", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vinyl-sourcemaps-apply", [
+        ["npm:0.2.1", {
+          "packageLocation": "./.yarn/cache/vinyl-sourcemaps-apply-npm-0.2.1-5e1bcaa3c3-c1d826acf4.zip/node_modules/vinyl-sourcemaps-apply/",
+          "packageDependencies": [
+            ["vinyl-sourcemaps-apply", "npm:0.2.1"],
+            ["source-map", "npm:0.5.7"]
           ],
           "linkType": "HARD",
         }]

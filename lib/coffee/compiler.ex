@@ -3,22 +3,9 @@ defmodule Coffee.Compiler do
   Compile coffee source to javascript source
   """
 
-  def compile(coffee, opts) do
-    assets_path =
-      opts
-      |> Map.new()
-      |> Map.get(:assets_path, "assets")
-
-    args = [
-      "workspace",
-      "coffee_compiler",
-      "rollup",
-      coffee,
-      "-c",
-      Application.app_dir(:coffee_compiler, "priv/rollup.config.js")
-    ]
-
-    {js, _} = System.cmd("yarn", args, cd: assets_path)
+  def compile(coffee, _opts) do
+    config = Application.app_dir(:coffee_compiler, "priv/rollup.config.js")
+    {js, _} = System.cmd("yarn", ["run", "rollup", coffee, "-c", config])
     {:ok, js}
   end
 end
