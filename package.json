@@ -2,11 +2,10 @@
   "name": "coffee_compiler",
   "version": "0.0.1",
   "dependencies": {
-    "@rollup/plugin-commonjs": "^16.0.0",
-    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
     "coffeescript": "^2.5.1",
-    "rollup": "^2.33.3",
-    "rollup-plugin-coffee-script": "Youimmi/rollup-plugin-coffee-script",
-    "rollup-plugin-terser": "Youimmi/rollup-plugin-terser"
+    "rollup": "^2.34.2",
+    "rollup-plugin-coffee-script": "Youimmi/rollup-plugin-coffee-script"
   }
 }
