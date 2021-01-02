@@ -1,5 +1,6 @@
 import coffee from 'rollup-plugin-coffee-script'
 import commonjs from '@rollup/plugin-commonjs'
+import compiler from '@ampproject/rollup-plugin-closure-compiler';
 import resolve from '@rollup/plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
 
@@ -11,6 +12,7 @@ export default {
     coffee(),
     resolve({ extensions, rootDir: '../assets' }),
     commonjs(extensions),
-    terser({ format: { comments: false } })
+    terser({ format: { comments: false } }),
+    compiler()
   ]
 }

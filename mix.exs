@@ -58,7 +58,8 @@ defmodule CoffeeCompiler.MixProject do
       update: [
         "cmd rm -rf _build deps mix.lock priv/.pnp.js priv/.yarn* priv/yarn.lock",
         "deps.get",
-        "cmd cd priv && yarn set version berry && yarn set version latest && yarn"
+        "cmd cd priv && yarn set version berry && yarn set version latest && yarn",
+        "yarn.unplug"
       ]
     ]
   end
