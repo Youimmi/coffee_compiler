@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Compile.Yarn do
   use Mix.Task
 
   def run(_args) do
-    System.cmd("yarn", ["-s"], cd: Application.app_dir(:coffee_compiler, "priv"))
+    System.cmd("yarn", [], cd: Application.app_dir(:coffee_compiler, "priv"))
     :ok
   end
 end

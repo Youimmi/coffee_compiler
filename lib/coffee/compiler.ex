@@ -1,8 +1,11 @@
 defmodule Coffee.Compiler do
   @moduledoc """
-  Compile coffee source to javascript source
+  Compiles CoffeeScript source into JS source
   """
 
+  @doc """
+  Compiles a CoffeeScript into JS
+  """
   def compile(coffee, _opts) do
     root_dir = Application.app_dir(:coffee_compiler, "priv")
     config_dir = root_dir <> "/rollup.config.js"
