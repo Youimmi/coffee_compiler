@@ -13,7 +13,7 @@ defmodule CoffeeTest do
 
   ExUnit.Case.register_describe_attribute(__MODULE__, :describe_fixtures)
 
-  @fixtures_path "test/fixtures/"
+  @fixtures_path File.cwd!() <> "/test/fixtures/"
   @options assets_path: @fixtures_path
 
   perform_async([js: "JS", coffee: "CoffeeScript"], fn {ext, ext_name} ->
@@ -24,36 +24,20 @@ defmodule CoffeeTest do
     describe "Compile the #{ext_name} file into JS" do
       test "Coffee.compile/2 compiles #{ext_name} into JS" do
         result = unquote(compile(source_file_path, @options))
-
         assert(result == unquote(expected_js))
       end
 
       test "Coffee.compile/2 returns \"\n\" if a blank #{ext_name} file is passed" do
         result = unquote(compile(blank_file_path, @options))
-
         assert(result == "\n")
       end
     end
   end)
 
   describe "Compile imported files" do
-    @result compile(@fixtures_path <> "app.coffee", @options)
+    result = compile(@fixtures_path <> "app.coffee", @options)
 
-    perform_async(
-      [
-        "var o;o=function(o){return`this is Foo file: ${o}`}",
-        "console.log(\"text\")",
-        "console.log(o)",
-        "console.log(2)",
-        "console.log(\"Application\")"
-      ],
-      fn expected_string ->
-        test "@import works as expected with load path (#{expected_string})" do
-          expected = ~r/#{unquote(Regex.escape(expected_string))}/
-
-          assert(Regex.match?(expected, @result))
-        end
-      end
-    )
+    assert result ==
+             "console.log(\"text\");console.log(function(a){return`this is Foo file: ${a}`});console.log(2);console.log(\"Application\")\n"
   end
 end

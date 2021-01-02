@@ -36,11 +36,3 @@ coffee_compiler-*
 !.github
 !.gitignore
 !.keep
-
-# Ignore yarn artifacts
-!.pnp.js
-!.yarn
-!.yarnrc.yml
-.yarn/*.gz
-.yarn/*.yml
-.yarn/unplugged

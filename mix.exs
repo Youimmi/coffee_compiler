@@ -13,6 +13,7 @@ defmodule CoffeeCompiler.MixProject do
       version: @version,
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
+      compilers: Mix.compilers() ++ [:yarn],
       description: @description,
       package: package(),
       deps: deps(),
@@ -30,7 +31,7 @@ defmodule CoffeeCompiler.MixProject do
 
   defp package do
     [
-      files: ["lib", "LICENSE", "mix.exs", "package.json", "priv/rollup.config.js", "README.md"],
+      files: ["lib", "LICENSE", "mix.exs", "priv", "README.md"],
       maintainers: [],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/Youimmi/coffee_compiler"}
@@ -55,9 +56,10 @@ defmodule CoffeeCompiler.MixProject do
   defp aliases do
     [
       update: [
-        "cmd rm -rf _build .pnp.js .yarn .yarnrc.yml deps mix.lock yarn.lock",
+        "cmd rm -rf _build deps mix.lock priv/.pnp.js priv/.yarn* priv/yarn.lock",
         "deps.get",
-        "cmd yarn set version berry && yarn set version latest && yarn"
+        "cmd cd priv && yarn set version berry && yarn set version latest && yarn",
+        "yarn.unplug"
       ]
     ]
   end
