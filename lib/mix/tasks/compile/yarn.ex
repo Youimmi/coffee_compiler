@@ -4,7 +4,9 @@ defmodule Mix.Tasks.Compile.Yarn do
   use Mix.Task
 
   def run(_args) do
-    System.cmd("yarn", [], cd: Application.app_dir(:coffee_compiler, "priv"))
+    root_dir = Application.app_dir(:coffee_compiler, "priv")
+    System.cmd("yarn", [], cd: root_dir)
+    System.cmd("yarn", ["unplug", "google-closure-compiler-*", "-R"], cd: root_dir)
     :ok
   end
 end

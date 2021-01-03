@@ -1,7 +1,6 @@
 # Ignore yarn artifacts
+.yarn
 !.pnp.js
-!.yarn
+!.yarn/cache
+!.yarn/releases
 !.yarnrc.yml
-.yarn/build-state.yml
-.yarn/install-state.gz
-.yarn/unplugged
