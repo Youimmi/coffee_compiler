@@ -6,13 +6,13 @@ import { terser } from 'rollup-plugin-terser'
 
 const extensions = { extensions: ['.js', '.coffee'] }
 
-export default {
+export default ({ configRootDir }) => ({
   output: { format: 'es' },
   plugins: [
     coffee(),
-    resolve({ extensions, rootDir: '../assets' }),
+    resolve({ extensions, rootDir: configRootDir }),
     commonjs(extensions),
     terser({ format: { comments: false } }),
-    compiler()
+    compiler({ compilation_level: 'ADVANCED' })
   ]
-}
+})

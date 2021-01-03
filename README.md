@@ -26,11 +26,11 @@ coffee = "/path/to/file.coffee"
 Coffee.compile(coffee)
 {:ok, "console.log(\"Application\")"}
 
-Coffee.compile(coffee, [assets_path: "/absolute/path/to/import/file"})
+Coffee.compile(coffee, [root_path: "/absolute/path/to/import/file"})
 {:ok, "var o;o=function(o){return`this is Foo file: ${o}`};console.log(o)"}
 ```
 
-You should pass an `assets_path` parameter if you use `@import` derective to include some code
+You should pass an `root_path` parameter if you use `@import` derective to include some code
 Use relavtive paths `@import  ./relative/path/to/file` in **.coffee** files
 
 ## License
