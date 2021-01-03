@@ -13,6 +13,6 @@ export default ({ configRootDir }) => ({
     resolve({ extensions, rootDir: configRootDir }),
     commonjs(extensions),
     terser({ format: { comments: false } }),
-    compiler({ compilation_level: 'ADVANCED' })
+    compiler()
   ]
 })
