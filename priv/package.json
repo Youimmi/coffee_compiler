@@ -3,16 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
-    "coffeescript": "^2.5.1",
-    "rollup": "^2.35.1",
+    "@ampproject/rollup-plugin-closure-compiler": "0.26.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "coffeescript": "Youimmi/coffeescript",
+    "rollup": "^2.46.0",
     "rollup-plugin-coffee-script": "Youimmi/rollup-plugin-coffee-script",
     "rollup-plugin-terser": "Youimmi/rollup-plugin-terser"
   },
   "dependenciesMeta": {
     "google-closure-compiler-java@20200517.0.0": {
+      "unplugged": true
+    },
+    "google-closure-compiler-java@20210406.0.0": {
       "unplugged": true
     },
     "google-closure-compiler-js@20200517.0.0": {
@@ -21,10 +24,19 @@
     "google-closure-compiler-linux@20200517.0.0": {
       "unplugged": true
     },
+    "google-closure-compiler-linux@20210406.0.0": {
+      "unplugged": true
+    },
     "google-closure-compiler-osx@20200517.0.0": {
       "unplugged": true
     },
+    "google-closure-compiler-osx@20210406.0.0": {
+      "unplugged": true
+    },
     "google-closure-compiler-windows@20200517.0.0": {
+      "unplugged": true
+    },
+    "google-closure-compiler-windows@20210406.0.0": {
       "unplugged": true
     }
   }
