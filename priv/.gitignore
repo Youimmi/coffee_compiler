@@ -1,5 +1,5 @@
 # Ignore yarn artifacts
-.yarn
+.yarn/*
 !.pnp.js
 !.yarn/cache
 !.yarn/releases
